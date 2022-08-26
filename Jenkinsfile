@@ -6,6 +6,8 @@ pipeline{
 			steps{
 				echo "BUILD stage"
 				sh ''' 
+					ls
+					pwd
 					cd /home/ubuntu/final/
 					docker build -t sandeep2523/jenkins:1.10 .
 				'''
