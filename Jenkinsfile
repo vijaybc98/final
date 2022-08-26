@@ -23,6 +23,7 @@ pipeline{
 			steps{
 				echo "Running container"
 				sh 'docker run -it -d -p 8060:8080 --name sandeep-tomcat sandeep2523/jenkins:1.10'
+				sh 'docker ps'
 				
 			}
 		}
